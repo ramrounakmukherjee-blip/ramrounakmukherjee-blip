@@ -32,7 +32,7 @@
 
 I build full-stack web applications, autonomous AI agents, and edge-first software — with a passion for building tools that function reliably where high-speed connectivity doesn't exist.
 
-- 🌾 **Founder & Lead Developer, Team Raven Roots**: 1st Place Winner at **Smart India Hackathon 2026** (Internal Selections across all 1st–4th year batches) with *AgriShield 365*.
+- 🌾 **Founder of "Rootra" & Lead Developer, Team Raven Roots**: 1st Place Winner at **Smart India Hackathon 2026** (Internal Selections across all 1st–4th year batches) with *AgriShield 365*.
 - 🤖 **Autonomous Agents & MCP**: Architecting multi-agent reasoning graphs, schema-validated tool-calling pipelines, and Model Context Protocol (MCP) integrations.
 - 📴 **Offline-First & Edge AI**: Developing field-ready PWAs and solar-powered hardware units with on-device vision inference (TFLite) for rural farmers.
 - 🛰️ **Spatial & Vision Intelligence**: Engineering vision-language workflows for multimodal remote sensing, bi-temporal change detection, and optical–SAR fusion.
