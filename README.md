@@ -1,24 +1,24 @@
 <div align="center">
-
+<a href="https://github.com/ramrounakmukherjee-blip"><img src="assets/hero.gif" width="900" alt="Slideshow: Kolkata at dusk, a satellite over Earth, drone-lit farmland, and a night-time developer desk" /></a>
+<!-- Hero slideshow is generated from assets/scenes/*.jpg by assets/make_hero.py (needs Pillow). -->
+  
 # Hi, I'm Ram Rounak Mukherjee 👋
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=620&lines=Full-stack+developer+from+India+%F0%9F%87%AE%F0%9F%87%B3;Building+AI-powered+tools+that+solve+real+problems;Offline-first+apps+for+farmers+%F0%9F%8C%BE;Agents%2C+vision-language+models+%26+MCP)](https://github.com/ramrounakmukherjee-blip)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=800&height=200&lines=Full-stack+developer;Building+AI-powered+tools+that+solve+real+problems;Offline-first+apps+for+farmers+%F0%9F%8C%BE;Agents%2C+vision-language+models+%26+MCP;Active+Builder.+Hackathon+Enthusiast)](https://github.com/ramrounakmukherjee-blip)
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
 [![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramrounakmukherjee@gmail.com)
 [![GitHub followers](https://img.shields.io/github/followers/ramrounakmukherjee-blip?style=for-the-badge&logo=github&label=Followers)](https://github.com/ramrounakmukherjee-blip)
-
 </div>
-
 
 <div align="center">
-## 🦋 My Git Butterfly
-
+  
+ 🦋 My Git Butterfly 🦋
+ 
 <a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a> <br>
 <img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
----
 </div>
 
+---
 
 ## 🙋‍♂️ About me
 
@@ -140,11 +140,25 @@ An interactive vision-language assistant for multimodal remote sensing image ana
 - Secure authentication for AI apps
 
 ---
+## 📊 GitHub Stats
+
+<div align="center">
+
+![](https://github-readme-stats.vercel.app/api?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+</div>
+
+## ✍️ Random Dev Quote
+<div align="center">
+
+  ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+</div>
 
 ## 📫 Let's connect
 
 - 💼 LinkedIn: [Ram Rounak Mukherjee](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
 - 📧 Email: [ramrounakmukherjee@gmail.com](mailto:ramrounakmukherjee@gmail.com)
 - 🐙 GitHub: [@ramrounakmukherjee-blip](https://github.com/ramrounakmukherjee-blip)
-
 </div>
