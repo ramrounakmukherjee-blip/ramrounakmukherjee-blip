@@ -18,9 +18,9 @@ SCENES = ROOT / "scenes"
 OUT = ROOT / "hero.gif"
 
 WIDTH, HEIGHT = 900, 383       # ~2.35:1, matches the source art
-HOLD_MS = 2600                 # how long each scene sits still
+HOLD_MS = 2050                 # 2.05s hold per scene
 FADE_FRAMES = 8                # frames spent cross-fading
-FADE_FRAME_MS = 65             # -> ~0.5s cross-fade
+FADE_FRAME_MS = 50             # 8 * 50ms = 0.40s transition (Total 2.45s per scene -> 9.8s loop)
 SOFTEN = 0.5                   # slight blur: smoother gradients, smaller GIF
 
 SCENE_FILES = [
