@@ -178,9 +178,15 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 
 <div align="center">
 
-![](https://github-readme-stats.vercel.app/api?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
-![](https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+<a href="https://github.com/ramrounakmukherjee-blip">
+  <img src="https://github-stats-extended.vercel.app/api?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Ram Rounak Mukherjee's GitHub Stats" />
+</a><br/>
+<a href="https://github.com/ramrounakmukherjee-blip">
+  <img src="https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false&timezone=Asia/Kolkata" alt="Ram Rounak Mukherjee's Streak Stats" />
+</a><br/>
+<a href="https://github.com/ramrounakmukherjee-blip">
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Most Used Languages" />
+</a>
 
 </div>
 
