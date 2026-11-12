@@ -1,22 +1,26 @@
 <div align="center">
-
+<a href="https://github.com/ramrounakmukherjee-blip"><img src="assets/hero.gif" width="900" alt="Slideshow: Kolkata at dusk, a satellite over Earth, drone-lit farmland, and a night-time developer desk" /></a>
+<!-- Hero slideshow is generated from assets/scenes/*.jpg by assets/make_hero.py (needs Pillow). -->
+  
 # Hi, I'm Ram Rounak Mukherjee 👋
-
-[![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=650&lines=Full-stack+developer+from+India+%F0%9F%87%AE%F0%9F%87%B3;Building+autonomous+AI+agents+%26+real-world+tools;Offline-first+apps+for+Indian+farmers+%F0%9F%8C%BE;SIH+2026+Winner+%7C+Team+Raven+Roots+%F0%9F%8F%86;Vision-language+models%2C+remote+sensing+%26+MCP)](https://github.com/ramrounakmukherjee-blip)
+  [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&pause=1000&color=2F81F7&center=true&vCenter=true&width=800&lines=Full-stack+developer+from+India+%F0%9F%87%AE%F0%9F%87%B3;Building+autonomous+AI+agents+%26+real-world+tools;Offline-first+apps+for+Indian+farmers+%F0%9F%8C%BE;SIH+2026+Winner+%7C+Team+Raven+Roots+%F0%9F%8F%86;Vision-language+models%2C+remote+sensing+%26+MCP)](https://github.com/ramrounakmukherjee-blip)
 
 <br/>
-
-<a href="https://github.com/ramrounakmukherjee-blip">
-  <img src="assets/hero.gif" width="100%" alt="Ram Rounak Mukherjee - Journey Banner (Kolkata • Satellite • Farmland • Code)" />
-</a>
-
-<br/><br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
 [![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramrounakmukherjee@gmail.com)
 [![GitHub followers](https://img.shields.io/github/followers/ramrounakmukherjee-blip?style=for-the-badge&logo=github&label=Followers)](https://github.com/ramrounakmukherjee-blip)
 [![SIH 2026 Winner](https://img.shields.io/badge/SIH%202026-College%201st%20Place%20%F0%9F%8F%86-D97706?style=for-the-badge&logo=target&logoColor=white)](https://github.com/ramrounakmukherjee-blip/AgriShield365)
+</div>
 
+---
+
+<div align="center">
+  
+### 🦋 My Git Butterfly 🦋
+ 
+<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a> <br>
+<img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
 </div>
 
 ---
@@ -31,35 +35,6 @@ I build full-stack web applications, autonomous AI agents, and edge-first softwa
 - 🛰️ **Spatial & Vision Intelligence**: Engineering vision-language workflows for multimodal remote sensing, bi-temporal change detection, and optical–SAR fusion.
 - 🎓 **Education**: B.Tech in Computer Science & Engineering at Swami Vivekananda Institute of Science & Technology, Kolkata.
 - 📍 Based in **Kolkata, West Bengal, India**.
-
----
-
-<div align="center">
-
-## 🦋 My Git Butterfly & Activity
-
-<table align="center" border="0" style="border: none;">
-  <tr style="border: none;">
-    <td align="center" width="50%" style="border: none; vertical-align: top;">
-      <a href="https://github.com/ramrounakmukherjee-blip/git-butterfly">
-        <img src="butterfly/butterfly.gif" width="380" alt="My Git Butterfly" />
-      </a>
-      <br/>
-      <img src="butterfly/languages.svg" width="380" alt="Languages by repo count" />
-    </td>
-    <td align="center" width="50%" style="border: none; vertical-align: middle;">
-      <a href="https://github.com/ramrounakmukherjee-blip">
-        <img src="https://github-readme-streak-stats.herokuapp.com/?user=ramrounakmukherjee-blip&theme=tokyonight&hide_border=true" width="380" alt="GitHub Streak" />
-      </a>
-      <br/><br/>
-      <a href="https://github.com/ramrounakmukherjee-blip">
-        <img src="https://github-readme-stats.vercel.app/api?username=ramrounakmukherjee-blip&show_icons=true&theme=tokyonight&hide_border=true&count_private=true" width="380" alt="GitHub Stats" />
-      </a>
-    </td>
-  </tr>
-</table>
-
-</div>
 
 ---
 
@@ -193,6 +168,25 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 - 🛰️ **Geospatial VLMs**: Advanced vision-language models for satellite time-series analysis and emergency disaster mapping.
 - 📴 **Edge AI & Low-Power Inference**: Quantized model execution on battery- and solar-powered microcontrollers and microcomputers.
 - 🔐 **Verifiable AI Workflows**: Zero-knowledge proof validation and cryptographic attestation for AI agent tool invocations.
+
+---
+
+## 📊 GitHub Stats
+
+<div align="center">
+
+![](https://github-readme-stats.vercel.app/api?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true)<br/>
+![](https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false)<br/>
+![](https://github-readme-stats.vercel.app/api/top-langs/?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+
+</div>
+
+## ✍️ Random Dev Quote
+
+<div align="center">
+
+  ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
+</div>
 
 ---
 
