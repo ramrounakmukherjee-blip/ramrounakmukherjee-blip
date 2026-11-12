@@ -14,9 +14,7 @@ jobs:
   butterfly:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-
-      - uses: ramrounakmukherjee-blip/git-butterfly@main # <- change YOUR_USERNAME
+      - uses: ramrounakmukherjee-blip/git-butterfly@main
         with:
           username: ${{ github.repository_owner }}
           # Optional: a personal access token (scope: read:user) as a repo secret
