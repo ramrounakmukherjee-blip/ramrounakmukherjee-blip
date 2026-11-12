@@ -10,7 +10,15 @@
 
 </div>
 
+
+<div align="center">
+## 🦋 My Git Butterfly
+
+<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a>
+<img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
 ---
+</div>
+
 
 ## 🙋‍♂️ About me
 
@@ -138,16 +146,5 @@ An interactive vision-language assistant for multimodal remote sensing image ana
 - 💼 LinkedIn: [Ram Rounak Mukherjee](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
 - 📧 Email: [ramrounakmukherjee@gmail.com](mailto:ramrounakmukherjee@gmail.com)
 - 🐙 GitHub: [@ramrounakmukherjee-blip](https://github.com/ramrounakmukherjee-blip)
-
-## 🦋 My Git Butterfly
-
-<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a>
-<img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
-
----
-
-<div align="center">
-
-⭐ If something here is useful to you, a star on the repo is always appreciated.
 
 </div>
