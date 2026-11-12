@@ -14,7 +14,7 @@
 <div align="center">
 ## 🦋 My Git Butterfly
 
-<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a>
+<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a> <br>
 <img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
 ---
 </div>
