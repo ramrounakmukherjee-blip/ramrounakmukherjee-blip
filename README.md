@@ -1,4 +1,7 @@
 <div align="center">
+  <h1 align="center">
+   🤗❤️✨ Welcome ✨❤️🤗
+</h1>
 <a href="https://github.com/ramrounakmukherjee-blip"><img src="assets/hero.gif" width="900" alt="Slideshow: Kolkata at dusk, a satellite over Earth, drone-lit farmland, and a night-time developer desk" /></a>
 <!-- Hero slideshow is generated from assets/scenes/*.jpg by assets/make_hero.py (needs Pillow). -->
   
