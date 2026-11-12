@@ -1,0 +1,32 @@
+# Put this file in your PROFILE repository (the repo named exactly like your username)
+# at .github/workflows/butterfly.yml
+name: Update butterfly
+
+on:
+  schedule:
+    - cron: "30 18 * * *" # every night at 00:00 India time (18:30 UTC)
+  workflow_dispatch: # lets you press "Run workflow" to test it
+
+permissions:
+  contents: write
+
+jobs:
+  butterfly:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ramrounakmukherjee-blip/git-butterfly@main # <- change YOUR_USERNAME
+        with:
+          username: ${{ github.repository_owner }}
+          # Optional: a personal access token (scope: read:user) as a repo secret
+          # also counts your PRIVATE contributions.
+          # token: ${{ secrets.BUTTERFLY_TOKEN }}
+
+      - name: Commit the new butterfly
+        run: |
+          git config user.name "git-butterfly[bot]"
+          git config user.email "git-butterfly@users.noreply.github.com"
+          git add butterfly
+          git diff --cached --quiet || git commit -m "chore: update butterfly"
+          git push
