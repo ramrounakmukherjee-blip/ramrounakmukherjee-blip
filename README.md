@@ -36,7 +36,7 @@ I build full-stack web applications, autonomous AI agents, and edge-first softwa
 - 🤖 **Autonomous Agents & MCP**: Architecting multi-agent reasoning graphs, schema-validated tool-calling pipelines, and Model Context Protocol (MCP) integrations.
 - 📴 **Offline-First & Edge AI**: Developing field-ready PWAs and solar-powered hardware units with on-device vision inference (TFLite) for rural farmers.
 - 🛰️ **Spatial & Vision Intelligence**: Engineering vision-language workflows for multimodal remote sensing, bi-temporal change detection, and optical–SAR fusion.
-- 🎓 **Education**: B.Tech in Computer Science & Engineering at Swami Vivekananda Institute of Science & Technology, Kolkata.
+- 🎓 **Education**: 1st Year B.Tech in Computer Science & Engineering.
 - 📍 Based in **Kolkata, West Bengal, India**.
 
 ---
