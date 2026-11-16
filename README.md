@@ -18,13 +18,35 @@
 
 ---
 
-<div align="center">
-  
-### 🦋 My Git Butterfly 🦋
- 
-<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly"><img src="butterfly/butterfly.gif" width="480" alt="My butterfly" /></a> <br>
-<img src="butterfly/languages.svg" width="480" alt="Languages by repo count" />
-</div>
+<picture>
+  <img align="left" width="45%" src="assets/riser.svg" alt="">
+</picture>
+<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly">
+  <img src="butterfly/butterfly.gif" align="right" width="45%" alt="My butterfly, redrawn every night from the day's activity">
+</a>
+<picture>
+  <img align="right" width="5%" src="assets/divider.svg" alt="">
+</picture>
+<picture>
+  <img align="left" width="8%" src="assets/spacer.svg" alt="">
+</picture>
+<a href="https://egorthinks.github.io/git-bonsai/?u=ramrounakmukherjee-blip">
+  <img src="output/bonsai.gif" align="left" width="37%" alt="My GitHub bonsai swaying in the wind, petals falling — open the interactive playground">
+</a>
+<br clear="all">
+<a href="https://github.com/ramrounakmukherjee-blip">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="cards/stats-dark.svg">
+    <img src="cards/stats-light.svg" align="left" width="45%" alt="Ram's GitHub stats">
+  </picture>
+</a>
+<a href="https://github.com/ramrounakmukherjee-blip?tab=repositories">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="cards/languages-dark.svg">
+    <img src="cards/languages-light.svg" align="right" width="45%" alt="Languages by repo count">
+  </picture>
+</a>
+<br clear="all">
 
 ---
 
@@ -174,27 +196,16 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 
 ---
 
-## 📊 GitHub Stats
+## 📊 Coding Streak & Dev Motivation
 
 <div align="center">
 
-<a href="https://github.com/ramrounakmukherjee-blip">
-  <img src="https://github-stats-extended.vercel.app/api?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true" alt="Ram Rounak Mukherjee's GitHub Stats" />
-</a><br/>
 <a href="https://github.com/ramrounakmukherjee-blip">
   <img src="https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false&timezone=Asia/Kolkata" alt="Ram Rounak Mukherjee's Streak Stats" />
-</a><br/>
-<a href="https://github.com/ramrounakmukherjee-blip">
-  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=ramrounakmukherjee-blip&theme=dark&hide_border=false&include_all_commits=true&count_private=true&layout=compact" alt="Most Used Languages" />
 </a>
+<br/><br/>
+<img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
 
-</div>
-
-## ✍️ Random Dev Quote
-
-<div align="center">
-
-  ![](https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical)
 </div>
 
 ---
