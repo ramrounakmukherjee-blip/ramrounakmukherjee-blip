@@ -18,35 +18,45 @@
 
 ---
 
-<picture>
-  <img align="left" width="45%" src="assets/riser.svg" alt="">
-</picture>
-<a href="https://github.com/ramrounakmukherjee-blip/git-butterfly">
-  <img src="butterfly/butterfly.gif" align="right" width="45%" alt="My butterfly, redrawn every night from the day's activity">
-</a>
-<picture>
-  <img align="right" width="5%" src="assets/divider.svg" alt="">
-</picture>
-<picture>
-  <img align="left" width="8%" src="assets/spacer.svg" alt="">
-</picture>
-<a href="https://egorthinks.github.io/git-bonsai/?u=ramrounakmukherjee-blip">
-  <img src="output/bonsai.gif" align="left" width="37%" alt="My GitHub bonsai swaying in the wind, petals falling — open the interactive playground">
-</a>
-<br clear="all">
-<a href="https://github.com/ramrounakmukherjee-blip">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="cards/stats-dark.svg">
-    <img src="cards/stats-light.svg" align="left" width="45%" alt="Ram's GitHub stats">
-  </picture>
-</a>
-<a href="https://github.com/ramrounakmukherjee-blip?tab=repositories">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="cards/languages-dark.svg">
-    <img src="cards/languages-light.svg" align="right" width="45%" alt="Languages by repo count">
-  </picture>
-</a>
-<br clear="all">
+<div align="center">
+
+<table align="center" border="0" style="border: none; border-collapse: collapse; margin: auto;">
+  <tr style="border: none;">
+    <th align="center" width="34%" style="border: none; text-align: center;">
+      <h3>🌳 My Git Bonsai 🌳</h3>
+    </th>
+    <th align="center" width="2%" style="border: none;"></th>
+    <th align="center" width="64%" style="border: none; text-align: center;">
+      <h3>🦋 My Git Butterfly 🦋</h3>
+    </th>
+  </tr>
+  <tr style="border: none;">
+    <td align="center" width="34%" valign="top" style="border: none; text-align: center;">
+      <a href="https://egorthinks.github.io/git-bonsai/?u=ramrounakmukherjee-blip">
+        <img src="output/bonsai.gif" width="210" alt="My Git Bonsai" />
+      </a>
+      <br/><br/>
+      <a href="https://github.com/ramrounakmukherjee-blip">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="cards/stats-dark.svg">
+          <img src="cards/stats-light.svg" width="320" alt="Ram's GitHub Stats">
+        </picture>
+      </a>
+    </td>
+    <td align="center" width="2%" valign="middle" style="border: none;">
+      <img src="assets/divider.svg" width="8" height="340" alt="" />
+    </td>
+    <td align="center" width="64%" valign="top" style="border: none; text-align: center;">
+      <a href="https://github.com/ramrounakmukherjee-blip/git-butterfly">
+        <img src="butterfly/butterfly.gif" width="460" alt="My Git Butterfly" />
+      </a>
+      <br/>
+      <img src="butterfly/languages.svg" width="460" alt="Languages by repo count" />
+    </td>
+  </tr>
+</table>
+
+</div>
 
 ---
 
