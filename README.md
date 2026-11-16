@@ -212,3 +212,6 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 *“Building resilient systems for the real world — from the silicon to the soil.”*
 
 </div>
+<div>
+  <img src="output/bonsai-growth.gif" width="384" alt="my git-bonsai" />
+</div>
