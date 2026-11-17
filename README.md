@@ -23,7 +23,7 @@
 <table align="center" border="0" style="border: none; border-collapse: collapse; margin: auto;">
   <tr style="border: none;">
     <th align="center" width="34%" style="border: none; text-align: center;">
-      <h3>🌳 My Git Bonsai 🌳</h3>
+      <h3>🌳 My Git Bonsai </h3>
     </th>
     <th align="center" width="2%" style="border: none;"></th>
     <th align="center" width="64%" style="border: none; text-align: center;">
