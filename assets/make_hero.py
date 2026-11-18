@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Build assets/hero.gif - the animated slideshow at the top of the profile README.
 
-Reads the four scene stills from assets/scenes/, holds each one for a beat,
+Reads the scene stills from assets/scenes/, holds each one for a beat,
 cross-fades into the next, and writes a looping GIF with a shared palette
 (so colours don't flicker between frames).
 
@@ -27,7 +27,7 @@ SCENE_FILES = [
     "01-kolkata.jpg",
     "02-satellite.jpg",
     "03-farmland.jpg",
-    "04-desk.jpg",
+    "04-desk-cat.jpg",
     "05-agents.jpg",
 ]
 
