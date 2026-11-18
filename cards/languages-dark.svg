@@ -1,15 +1,14 @@
-
-      <svg
+<svg
         width="400"
-        height="115"
-        viewBox="0 0 400 115"
+        height="145"
+        viewBox="0 0 400 145"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId"></title>
-        <desc id="descId"></desc>
+        <title id="titleId">Languages by repo count</title>
+        <desc id="descId">Languages: Python 40%, JavaScript 30%, TypeScript 20%, C++ 10%</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -17,31 +16,13 @@
             animation: fadeInAnimation 0.8s ease-in-out forwards;
           }
           @supports(-moz-appearance: auto) {
-            /* Selector detects Firefox */
             .header { font-size: 15.5px; }
           }
           
-    @keyframes slideInAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: calc(100%-100px);
-      }
-    }
-    @keyframes growWidthAnimation {
-      from {
-        width: 0;
-      }
-      to {
-        width: 100%;
-      }
-    }
     .stat {
       font: 600 14px 'Segoe UI', Ubuntu, "Helvetica Neue", Sans-Serif; fill: #c9d1d9;
     }
     @supports(-moz-appearance: auto) {
-      /* Selector detects Firefox */
       .stat { font-size:12px; }
     }
     .bold { font-weight: 700 }
@@ -53,44 +34,18 @@
       opacity: 0;
       animation: fadeInAnimation 0.3s ease-in-out forwards;
     }
-    #rect-mask rect{
-      animation: slideInAnimation 1s ease-in-out forwards;
-    }
-    .lang-progress{
-      animation: growWidthAnimation 0.6s ease-in-out forwards;
-    }
-    .progress-background { fill: #ddd; }
     
-          
-
-          
-      /* Animations */
-      @keyframes scaleInAnimation {
-        from {
-          transform: translate(-5px, 5px) scale(0);
-        }
-        to {
-          transform: translate(-5px, 5px) scale(1);
-        }
+    @keyframes fadeInAnimation {
+      from {
+        opacity: 0;
       }
-      @keyframes fadeInAnimation {
-        from {
-          opacity: 0;
-        }
-        to {
-          opacity: 1;
-        }
+      to {
+        opacity: 1;
       }
+    }
     
           * { animation-duration: 0s !important; animation-delay: 0s !important; }
         </style>
-
-        
-        <defs>
-          
-          
-        </defs>
-        
 
         <rect
           data-testid="card-bg"
@@ -105,7 +60,6 @@
           stroke-opacity="0"
         />
 
-        
       <g
         data-testid="card-title"
         transform="translate(25, 35)"
@@ -119,7 +73,6 @@
       >Languages by repo count</text>
     </g>
       </g>
-    
 
         <g
           data-testid="main-card-body"
@@ -128,52 +81,89 @@
           
     <svg data-testid="lang-items" x="25">
       
-  
       <mask id="rect-mask">
-          <rect x="0" y="0" width="350" height="8" fill="white" rx="5"/>
-        </mask>
+        <rect x="0" y="0" width="350" height="8" fill="white" rx="5"/>
+      </mask>
         
-        <rect
+      <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="0"
+          x="0.0"
           y="0"
-          width="233.33"
+          width="140.0"
           height="8"
           fill="#3572A5"
         />
-      
-        <rect
+      <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="233.33"
+          x="140.0"
           y="0"
-          width="116.67"
+          width="105.0"
+          height="8"
+          fill="#f1e05a"
+        />
+      <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="245.0"
+          y="0"
+          width="70.0"
           height="8"
           fill="#3178c6"
         />
+      <rect
+          mask="url(#rect-mask)"
+          data-testid="lang-progress"
+          x="315.0"
+          y="0"
+          width="35.0"
+          height="8"
+          fill="#f34b7d"
+        />
       
-      
+      <g transform="translate(0, 25)">
+        <g transform="translate(0, 0)">
+          
+    <g transform="translate(0, 0)">
+      <g class="stagger" style="animation-delay: 450ms">
+        <circle cx="5" cy="6" r="5" fill="#3572A5" />
+        <text data-testid="lang-name" x="15" y="10" class="lang-name">
+          Python 40.00%
+        </text>
+      </g>
+    </g>
     <g transform="translate(0, 25)">
-      <g transform="translate(0, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#3572A5" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        Python 66.67%
-      </text>
+      <g class="stagger" style="animation-delay: 600ms">
+        <circle cx="5" cy="6" r="5" fill="#f34b7d" />
+        <text data-testid="lang-name" x="15" y="10" class="lang-name">
+          C++ 10.00%
+        </text>
+      </g>
     </g>
-  </g></g><g transform="translate(150, 0)"><g transform="translate(0, 0)">
-    <g class="stagger" style="animation-delay: 450ms">
-      <circle cx="5" cy="6" r="5" fill="#3178c6" />
-      <text data-testid="lang-name" x="15" y="10" class='lang-name'>
-        TypeScript 33.33%
-      </text>
+        </g>
+        <g transform="translate(160, 0)">
+          
+    <g transform="translate(0, 0)">
+      <g class="stagger" style="animation-delay: 450ms">
+        <circle cx="5" cy="6" r="5" fill="#f1e05a" />
+        <text data-testid="lang-name" x="15" y="10" class="lang-name">
+          JavaScript 30.00%
+        </text>
+      </g>
     </g>
-  </g></g>
+    <g transform="translate(0, 25)">
+      <g class="stagger" style="animation-delay: 600ms">
+        <circle cx="5" cy="6" r="5" fill="#3178c6" />
+        <text data-testid="lang-name" x="15" y="10" class="lang-name">
+          TypeScript 20.00%
+        </text>
+      </g>
     </g>
+        </g>
+      </g>
   
     </svg>
   
         </g>
       </svg>
-    

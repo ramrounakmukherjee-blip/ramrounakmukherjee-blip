@@ -6,7 +6,9 @@ on:
     - cron: "50 18 * * *"
   workflow_dispatch:
   push:
-    paths: [.github/workflows/cards.yml]
+    paths:
+      - .github/workflows/cards.yml
+      - scripts/generate_cards.js
 
 permissions:
   contents: write
@@ -18,31 +20,24 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Draw the stats card, light
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
+      - uses: actions/setup-node@v4
         with:
-          card: stats
-          options: username=ramrounakmukherjee-blip&hide_border=true&disable_animations=true&bg_color=00000000&title_color=4a32a6&text_color=1f2328&icon_color=1257ab&card_width=400&show_icons=true&rank_icon=github&ring_color=4a32a6
-          path: cards/stats-light.svg
-          core_version: 2.2.0
-          fail_on_error: "false"
-      - name: Draw the stats card, dark
-        uses: stats-organization/github-readme-stats-action@2c498845f71017821efaad14293ebc736156ef21
-        with:
-          card: stats
-          options: username=ramrounakmukherjee-blip&hide_border=true&disable_animations=true&bg_color=00000000&title_color=a98ff7&text_color=c9d1d9&icon_color=7ccdf2&card_width=400&show_icons=true&rank_icon=github&ring_color=a98ff7
-          path: cards/stats-dark.svg
-          core_version: 2.2.0
-          fail_on_error: "false"
+          node-version: "20"
+      - name: Generate dynamic stats & language cards
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          node scripts/generate_cards.js
       - name: Commit the cards if they changed
         shell: bash
         run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add cards
           if git diff --cached --quiet; then
             echo "The cards are unchanged; nothing to commit."
             exit 0
           fi
-          git config user.name "github-actions[bot]"
-          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git commit --quiet --message "cards: update stats cards"
-          git push --quiet
+          git commit -m "cards: update stats and languages cards"
+          git pull --rebase origin main
+          git push

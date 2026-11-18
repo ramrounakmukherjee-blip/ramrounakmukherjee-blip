@@ -51,7 +51,10 @@
         <img src="butterfly/butterfly.gif" width="460" alt="My Git Butterfly" />
       </a>
       <br/>
-      <img src="butterfly/languages.svg" width="460" alt="Languages by repo count" />
+      <picture>
+        <source media="(prefers-color-scheme: dark)" srcset="cards/languages-dark.svg">
+        <img src="cards/languages-light.svg" width="420" alt="Languages by repo count">
+      </picture>
     </td>
   </tr>
 </table>
