@@ -7,7 +7,7 @@
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Languages by repo count</title>
+        <title id="titleId">Languages by byte size</title>
         <desc id="descId">Languages: TypeScript 39.77%, JavaScript 26.1%, Python 16.05%, HTML 10.77%, CSS 5.94%, Jupyter Notebook 1.36%</desc>
         <style>
           .header {
@@ -70,7 +70,7 @@
         y="0"
         class="header"
         data-testid="header"
-      >Languages by repo count</text>
+      >Languages by byte size</text>
     </g>
       </g>
 

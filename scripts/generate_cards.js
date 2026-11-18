@@ -32,6 +32,29 @@ const THEMES = {
   },
 };
 
+// Stats shown when the GitHub API is unreachable or returns no data.
+// Kept in one place so the API fallback path and the card generator cannot drift apart.
+const BASELINE = {
+  totalContributions: 303,
+  totalCommits: 64,
+  totalStars: 3,
+  totalPRs: 4,
+  totalIssues: 0,
+  contributedTo: 4,
+};
+
+// The two-column language layout renders at most 6 rows inside the 145px-tall card.
+const MAX_LANGUAGES = 6;
+
+function escapeXml(value) {
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&apos;');
+}
+
 async function fetchGitHubData() {
   const query = `
     query($login: String!) {
@@ -44,7 +67,6 @@ async function fetchGitHubData() {
           totalCommitContributions
           totalPullRequestContributions
           totalIssueContributions
-          restrictedContributionsCount
           commitContributionsByRepository(maxRepositories: 100) {
             contributions {
               totalCount
@@ -118,11 +140,12 @@ async function fetchGitHubData() {
       totalStars += r.stargazerCount || 0;
     }
 
-    const totalContribs = coll.contributionCalendar?.totalContributions || 303;
-    const totalCommits = coll.totalCommitContributions || 64;
-    const totalPRs = coll.totalPullRequestContributions || 4;
-    const totalIssues = coll.totalIssueContributions || 0;
-    const contributedTo = coll.commitContributionsByRepository?.length || 4;
+    // `??` not `||`: a real 0 from the API must stay 0, not be replaced by the baseline
+    const totalContribs = coll.contributionCalendar?.totalContributions ?? BASELINE.totalContributions;
+    const totalCommits = coll.totalCommitContributions ?? BASELINE.totalCommits;
+    const totalPRs = coll.totalPullRequestContributions ?? BASELINE.totalPRs;
+    const totalIssues = coll.totalIssueContributions ?? BASELINE.totalIssues;
+    const contributedTo = coll.commitContributionsByRepository?.length ?? BASELINE.contributedTo;
 
     // Compute REAL language breakdown from non-fork repos using byte counts
     const langBytes = {};
@@ -155,7 +178,7 @@ async function fetchGitHubData() {
       name: user.name || 'Ram Rounak Mukherjee',
       totalContributions: totalContribs,
       totalCommits: totalCommits,
-      totalStars: Math.max(totalStars, 3),
+      totalStars: totalStars,
       totalPRs: totalPRs,
       totalIssues: totalIssues,
       contributedTo: contributedTo,
@@ -171,8 +194,8 @@ function generateStatsCard(stats, themeName) {
   const t = THEMES[themeName];
   const title = "Ram Rounak Mukherjee's GitHub Stats";
   
-  // Format total commits / contributions
-  const commitsDisplay = stats.totalContributions || stats.totalCommits || 303;
+  // Format total commits / contributions (nullish chain: 0 is a valid value)
+  const commitsDisplay = stats.totalContributions ?? stats.totalCommits ?? BASELINE.totalContributions;
   const starsDisplay = stats.totalStars;
   const prsDisplay = stats.totalPRs;
   const issuesDisplay = stats.totalIssues;
@@ -231,18 +254,8 @@ function generateStatsCard(stats, themeName) {
       opacity: 0.9;
       transform-origin: -10px 8px;
       transform: rotate(-90deg);
-      animation: rankAnimation 1s forwards ease-in-out;
     }
-    
-    @keyframes rankAnimation {
-      from {
-        stroke-dashoffset: 251.3;
-      }
-      to {
-        stroke-dashoffset: 45;
-      }
-    }
-  
+
     @keyframes fadeInAnimation {
       from {
         opacity: 0;
@@ -384,6 +397,7 @@ function generateStatsCard(stats, themeName) {
 
 function generateLanguagesCard(languages, themeName) {
   const t = THEMES[themeName];
+  const title = 'Languages by byte size';
 
   const totalWidth = 350;
   let accumulatedX = 0;
@@ -410,13 +424,13 @@ function generateLanguagesCard(languages, themeName) {
     else col1.push(lang);
   });
 
-  function renderCol(items, xOffset) {
+  function renderCol(items) {
     return items.map((item, idx) => `
     <g transform="translate(0, ${idx * 25})">
       <g class="stagger" style="animation-delay: ${450 + idx * 150}ms">
         <circle cx="5" cy="6" r="5" fill="${item.color}" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          ${item.name} ${item.percent.toFixed(2)}%
+          ${escapeXml(item.name)} ${item.percent.toFixed(2)}%
         </text>
       </g>
     </g>`).join('');
@@ -432,8 +446,8 @@ function generateLanguagesCard(languages, themeName) {
         role="img"
         aria-labelledby="descId"
       >
-        <title id="titleId">Languages by repo count</title>
-        <desc id="descId">Languages: ${languages.map(l => `${l.name} ${l.percent}%`).join(', ')}</desc>
+        <title id="titleId">${title}</title>
+        <desc id="descId">Languages: ${languages.map(l => `${escapeXml(l.name)} ${l.percent}%`).join(', ')}</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -495,7 +509,7 @@ function generateLanguagesCard(languages, themeName) {
         y="0"
         class="header"
         data-testid="header"
-      >Languages by repo count</text>
+      >${title}</text>
     </g>
       </g>
 
@@ -514,10 +528,10 @@ function generateLanguagesCard(languages, themeName) {
       
       <g transform="translate(0, 25)">
         <g transform="translate(0, 0)">
-          ${renderCol(col0, 0)}
+          ${renderCol(col0)}
         </g>
         <g transform="translate(160, 0)">
-          ${renderCol(col1, 160)}
+          ${renderCol(col1)}
         </g>
       </g>
   
@@ -533,18 +547,14 @@ async function main() {
   const remoteStats = await fetchGitHubData();
   const stats = remoteStats || {
     name: 'Ram Rounak Mukherjee',
-    totalContributions: 303,
-    totalCommits: 64,
-    totalStars: 3,
-    totalPRs: 4,
-    totalIssues: 0,
-    contributedTo: 4,
+    ...BASELINE,
     languages: [],
   };
 
-  // Use real language data from API, or fallback to user's known primary languages
+  // Use real language data from API, or fallback to user's known primary languages.
+  // Cap at MAX_LANGUAGES: the two-column layout renders at most 6 rows inside the 145px card.
   const languages = (stats.languages && stats.languages.length > 0)
-    ? stats.languages
+    ? stats.languages.slice(0, MAX_LANGUAGES)
     : [
         { name: 'Python', percent: 33.33, color: '#3572A5' },
         { name: 'JavaScript', percent: 33.33, color: '#f1e05a' },
