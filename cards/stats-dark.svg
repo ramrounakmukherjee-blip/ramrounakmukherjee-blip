@@ -8,7 +8,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Ram Rounak Mukherjee's GitHub Stats</title>
-        <desc id="descId">Total Stars Earned: 3, Total Contributions: 303, Total PRs: 4, Total Issues: 0, Contributed to: 4</desc>
+        <desc id="descId">Total Stars Earned: 3, Total Contributions: 306, Total PRs: 7, Total Issues: 0, Contributed to: 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -147,7 +147,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >303</text>
+      >306</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
@@ -162,7 +162,7 @@
         x="224.01"
         y="12.5"
         data-testid="prs"
-      >4</text>
+      >7</text>
     </g>
   </g><g transform="translate(0, 75)">
     <g class="stagger" style="animation-delay: 900ms" transform="translate(25, 0)">
@@ -192,7 +192,7 @@
         x="224.01"
         y="12.5"
         data-testid="contribs"
-      >4</text>
+      >6</text>
     </g>
   </g>
     </svg>
