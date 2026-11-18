@@ -10,13 +10,18 @@ on:
 permissions:
   contents: write
 
+# One run at a time so a schedule + manual dispatch never race on the same push
+concurrency: butterfly
+
 jobs:
   butterfly:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
-      - uses: ramrounakmukherjee-blip/git-butterfly@main
+      - uses: ramrounakmukherjee-blip/git-butterfly@51e4dece898f6152ba47b754253fdbf17a97b748
         with:
           username: ${{ github.repository_owner }}
           token: ${{ secrets.BUTTERFLY_TOKEN || secrets.GITHUB_TOKEN }}
@@ -29,5 +34,5 @@ jobs:
           if ! git diff --cached --quiet; then
             git commit -m "chore: update butterfly"
             git pull --rebase origin main
-            git push
+            git push origin HEAD
           fi

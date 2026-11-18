@@ -1,0 +1,12 @@
+{
+  "name": "profile-assets",
+  "private": true,
+  "type": "module",
+  "description": "Generated assets and automation for the GitHub profile README",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "cards": "node scripts/generate_cards.js"
+  }
+}
