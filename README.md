@@ -23,7 +23,7 @@
 <table align="center" border="0" style="border: none; border-collapse: collapse; margin: auto;">
   <tr style="border: none;">
     <th align="center" width="34%" style="border: none; text-align: center;">
-      <h3>🌳 My Git Bonsai </h3>
+      <h3>🌳 My Git Bonsai 🌳</h3>
     </th>
     <th align="center" width="2%" style="border: none;"></th>
     <th align="center" width="64%" style="border: none; text-align: center;">
@@ -51,10 +51,7 @@
         <img src="butterfly/butterfly.gif" width="460" alt="My Git Butterfly" />
       </a>
       <br/>
-      <picture>
-        <source media="(prefers-color-scheme: dark)" srcset="cards/languages-dark.svg">
-        <img src="cards/languages-light.svg" width="420" alt="Languages by repo count">
-      </picture>
+      <img src="butterfly/languages.svg" width="460" alt="Languages by repo count" />
     </td>
   </tr>
 </table>

@@ -8,7 +8,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Languages by repo count</title>
-        <desc id="descId">Languages: Python 40%, JavaScript 30%, TypeScript 20%, C++ 10%</desc>
+        <desc id="descId">Languages: Python 33.33%, JavaScript 33.33%, TypeScript 33.34%</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -90,36 +90,27 @@
           data-testid="lang-progress"
           x="0.0"
           y="0"
-          width="140.0"
+          width="116.7"
           height="8"
           fill="#3572A5"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="140.0"
+          x="116.7"
           y="0"
-          width="105.0"
+          width="116.7"
           height="8"
           fill="#f1e05a"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="245.0"
+          x="233.3"
           y="0"
-          width="70.0"
+          width="116.7"
           height="8"
           fill="#3178c6"
-        />
-      <rect
-          mask="url(#rect-mask)"
-          data-testid="lang-progress"
-          x="315.0"
-          y="0"
-          width="35.0"
-          height="8"
-          fill="#f34b7d"
         />
       
       <g transform="translate(0, 25)">
@@ -129,15 +120,15 @@
       <g class="stagger" style="animation-delay: 450ms">
         <circle cx="5" cy="6" r="5" fill="#3572A5" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          Python 40.00%
+          Python 33.33%
         </text>
       </g>
     </g>
     <g transform="translate(0, 25)">
       <g class="stagger" style="animation-delay: 600ms">
-        <circle cx="5" cy="6" r="5" fill="#f34b7d" />
+        <circle cx="5" cy="6" r="5" fill="#3178c6" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          C++ 10.00%
+          TypeScript 33.34%
         </text>
       </g>
     </g>
@@ -148,15 +139,7 @@
       <g class="stagger" style="animation-delay: 450ms">
         <circle cx="5" cy="6" r="5" fill="#f1e05a" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          JavaScript 30.00%
-        </text>
-      </g>
-    </g>
-    <g transform="translate(0, 25)">
-      <g class="stagger" style="animation-delay: 600ms">
-        <circle cx="5" cy="6" r="5" fill="#3178c6" />
-        <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          TypeScript 20.00%
+          JavaScript 33.33%
         </text>
       </g>
     </g>

@@ -19,9 +19,7 @@ jobs:
       - uses: ramrounakmukherjee-blip/git-butterfly@main
         with:
           username: ${{ github.repository_owner }}
-          # Optional: a personal access token (scope: read:user) as a repo secret
-          # also counts your PRIVATE contributions.
-          # token: ${{ secrets.BUTTERFLY_TOKEN }}
+          token: ${{ secrets.BUTTERFLY_TOKEN || secrets.GITHUB_TOKEN }}
 
       - name: Commit the new butterfly
         run: |

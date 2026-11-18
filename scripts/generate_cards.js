@@ -68,6 +68,15 @@ async function fetchGitHubData() {
               name
               color
             }
+            languages(first: 10, orderBy: { field: SIZE, direction: DESC }) {
+              edges {
+                size
+                node {
+                  name
+                  color
+                }
+              }
+            }
           }
         }
       }
@@ -115,6 +124,33 @@ async function fetchGitHubData() {
     const totalIssues = coll.totalIssueContributions || 0;
     const contributedTo = coll.commitContributionsByRepository?.length || 4;
 
+    // Compute REAL language breakdown from non-fork repos using byte counts
+    const langBytes = {};
+    const langColors = {};
+    for (const r of repos) {
+      if (r.isFork) continue;
+      if (!r.languages?.edges?.length) continue;
+      for (const edge of r.languages.edges) {
+        const name = edge.node.name;
+        const color = edge.node.color;
+        langBytes[name] = (langBytes[name] || 0) + edge.size;
+        if (!langColors[name]) langColors[name] = color;
+      }
+    }
+
+    // Convert to sorted percentages
+    const totalBytes = Object.values(langBytes).reduce((a, b) => a + b, 0);
+    let languages = [];
+    if (totalBytes > 0) {
+      languages = Object.entries(langBytes)
+        .map(([name, bytes]) => ({
+          name,
+          percent: parseFloat(((bytes / totalBytes) * 100).toFixed(2)),
+          color: langColors[name] || '#888',
+        }))
+        .sort((a, b) => b.percent - a.percent);
+    }
+
     return {
       name: user.name || 'Ram Rounak Mukherjee',
       totalContributions: totalContribs,
@@ -123,6 +159,7 @@ async function fetchGitHubData() {
       totalPRs: totalPRs,
       totalIssues: totalIssues,
       contributedTo: contributedTo,
+      languages: languages,
     };
   } catch (err) {
     console.warn('Failed to fetch from GitHub API:', err.message);
@@ -346,16 +383,8 @@ function generateStatsCard(stats, themeName) {
   `;
 }
 
-function generateLanguagesCard(themeName) {
+function generateLanguagesCard(languages, themeName) {
   const t = THEMES[themeName];
-
-  // Accurate project languages including JavaScript, Python, TypeScript, and C++
-  const languages = [
-    { name: 'Python', percent: 40.00, color: '#3572A5' },
-    { name: 'JavaScript', percent: 30.00, color: '#f1e05a' },
-    { name: 'TypeScript', percent: 20.00, color: '#3178c6' },
-    { name: 'C++', percent: 10.00, color: '#f34b7d' },
-  ];
 
   const totalWidth = 350;
   let accumulatedX = 0;
@@ -374,11 +403,13 @@ function generateLanguagesCard(themeName) {
     return rect;
   }).join('\n      ');
 
-  // 2 columns of 2 languages:
-  // col 0: Python, C++
-  // col 1: JavaScript, TypeScript
-  const col0 = [languages[0], languages[3]];
-  const col1 = [languages[1], languages[2]];
+  // Split languages into 2 columns dynamically
+  const col0 = [];
+  const col1 = [];
+  languages.forEach((lang, i) => {
+    if (i % 2 === 0) col0.push(lang);
+    else col1.push(lang);
+  });
 
   function renderCol(items, xOffset) {
     return items.map((item, idx) => `
@@ -403,7 +434,7 @@ function generateLanguagesCard(themeName) {
         aria-labelledby="descId"
       >
         <title id="titleId">Languages by repo count</title>
-        <desc id="descId">Languages: Python 40%, JavaScript 30%, TypeScript 20%, C++ 10%</desc>
+        <desc id="descId">Languages: ${languages.map(l => `${l.name} ${l.percent}%`).join(', ')}</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -509,14 +540,25 @@ async function main() {
     totalPRs: 4,
     totalIssues: 0,
     contributedTo: 4,
+    languages: [],
   };
 
+  // Use real language data from API, or fallback to user's known primary languages
+  const languages = (stats.languages && stats.languages.length > 0)
+    ? stats.languages
+    : [
+        { name: 'Python', percent: 33.33, color: '#3572A5' },
+        { name: 'JavaScript', percent: 33.33, color: '#f1e05a' },
+        { name: 'TypeScript', percent: 33.34, color: '#3178c6' },
+      ];
+
   console.log('Generating cards with stats:', stats);
+  console.log('Languages:', languages);
 
   const statsDark = generateStatsCard(stats, 'dark');
   const statsLight = generateStatsCard(stats, 'light');
-  const langsDark = generateLanguagesCard('dark');
-  const langsLight = generateLanguagesCard('light');
+  const langsDark = generateLanguagesCard(languages, 'dark');
+  const langsLight = generateLanguagesCard(languages, 'light');
 
   fs.writeFileSync(path.join(CARDS_DIR, 'stats-dark.svg'), statsDark.trim() + '\n', 'utf8');
   fs.writeFileSync(path.join(CARDS_DIR, 'stats-light.svg'), statsLight.trim() + '\n', 'utf8');
