@@ -2,7 +2,7 @@
   <h1 align="center">
    🤗❤️ Welcome ❤️🤗
 </h1>
-<a href="https://github.com/ramrounakmukherjee-blip"><img src="assets/hero.gif" width="900" alt="Slideshow: Kolkata at dusk, a satellite over Earth, drone-lit farmland, and a night-time developer desk" /></a>
+<a href="https://github.com/ramrounakmukherjee-blip"><img src="assets/hero.gif" width="900" alt="Slideshow: Kolkata at dusk, a satellite over Earth, drone-lit farmland, a night-time developer desk, and an autonomous AI agent reasoning studio" /></a>
 <!-- Hero slideshow is generated from assets/scenes/*.jpg by assets/make_hero.py (needs Pillow). -->
   
 # Hi, I'm Ram Rounak Mukherjee 👋
@@ -11,9 +11,9 @@
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
+[![YouTube](https://img.shields.io/badge/YouTube-Subscribe-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ramrounakmukherjee1434)
 [![Email](https://img.shields.io/badge/Email-Say_hello-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramrounakmukherjee@gmail.com)
 [![GitHub followers](https://img.shields.io/github/followers/ramrounakmukherjee-blip?style=for-the-badge&logo=github&label=Followers)](https://github.com/ramrounakmukherjee-blip)
-[![SIH 2026 Winner](https://img.shields.io/badge/SIH%202026-College%201st%20Place%20%F0%9F%8F%86-D97706?style=for-the-badge&logo=target&logoColor=white)](https://github.com/ramrounakmukherjee-blip/AgriShield365)
 </div>
 
 ---
@@ -91,6 +91,7 @@ A farmer-first crop-health, irrigation intelligence, and risk-forecasting platfo
 
 [![Live App](https://img.shields.io/badge/Live_App-agrishield365.web.app-047857?style=flat-square&logo=firebase&logoColor=white)](https://agrishield365.web.app)
 [![SIH 2026](https://img.shields.io/badge/SIH_2026-1st_Place-D97706?style=flat-square&logo=target&logoColor=white)](https://github.com/ramrounakmukherjee-blip/AgriShield365)
+[![Full Walkthrough](https://img.shields.io/badge/YouTube-Full_Walkthrough-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=tJPDBoMmfGI&t=53s)
 
 <br/>
 
@@ -104,6 +105,9 @@ A rugged IoT hardware twin designed for field-edge surveillance without requirin
 - 📢 **Zero-Dependency Alerts**: Real-time localized voice readouts, onboard status indicators, and SMS alerts paired with opportunistic cloud sync.
 
 `Edge AI` · `TensorFlow Lite` · `Model Context Protocol (MCP)` · `Python` · `IoT & Sensors`
+
+[![Simulation](https://img.shields.io/badge/YouTube-Simulation-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=Ljn2GMyqb9A&t=1s)
+[![Model Lilly Demo](https://img.shields.io/badge/YouTube-Model_Lilly_Demo-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=a5vdY3kb6ZQ)
 
 <br/>
 
@@ -159,7 +163,26 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 
 `TypeScript` · `React` · `Express` · `Vite` · `Tailwind CSS` · `Docker`
 
-[![Live Demo](https://img.shields.io/badge/Live_Demo-ticket--to--ride-2563EB?style=flat-square&logo=render&logoColor=white)](https://ticket-to-ride-2rav.onrender.com/)
+[![Live App](https://img.shields.io/badge/Live_App-ticket--to--ride-2563EB?style=flat-square&logo=render&logoColor=white)](https://ticket-to-ride-2rav.onrender.com/)
+
+---
+
+### 📖 Creative Intelligence & Narrative Studios
+
+#### ✍️ [Light Novel Buddy](https://github.com/ramrounakmukherjee-blip/LightNovelBuddy)
+> **Your story. Your choices. Your world.**
+*Wildcard — Open Innovation Track | AI-Powered Creative Writing Companion*
+
+A focused personal writing studio and narrative intelligence workspace built for light novel authors to maintain deep fictional continuity, manage world-building lore, and refine chapters with AI assistance without surrendering their creative agency.
+- 🗺️ **World-Building Lore Engine**: Categorised knowledge base tracking narrative rules, factions, magic systems, character arcs, and geographical continuity across drafts.
+- 🧠 **Context-Aware Assistance**: Story-scoped writing companions for grammar refinement, dialogue styling, and descriptive richness grounded in story canon.
+- 🛡️ **Author-First Architecture**: Built on the core principle: *AI suggests; the author decides* — empowering imagination rather than taking it over.
+- ⚡ **Full-Stack Workspace**: Integrated distraction-free chapter editor, character profiles, and containerized REST API backend.
+
+`JavaScript` · `Python` · `HTML5` · `CSS3` · `Adaption AI` · `Render`
+
+[![Live App](https://img.shields.io/badge/Live_App-lightnovelbuddy-526B58?style=flat-square&logo=render&logoColor=white)](https://lightnovelbuddyf.onrender.com/)
+[![Detailed Walkthrough](https://img.shields.io/badge/YouTube-Detailed_Walkthrough-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/watch?v=vfx84i9Vq7c&t=3s)
 
 ---
 
@@ -225,6 +248,7 @@ A comprehensive, interactive booking platform capturing the mechanics and operat
 <div align="center">
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Ram_Rounak_Mukherjee-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ram-rounak-mukherjee-79444127b/)
+[![YouTube](https://img.shields.io/badge/YouTube-Ram_Rounak_Mukherjee-FF0000?style=for-the-badge&logo=youtube&logoColor=white)](https://www.youtube.com/@ramrounakmukherjee1434)
 [![Email](https://img.shields.io/badge/Email-ramrounakmukherjee@gmail.com-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:ramrounakmukherjee@gmail.com)
 [![GitHub](https://img.shields.io/badge/GitHub-@ramrounakmukherjee--blip-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/ramrounakmukherjee-blip)
 

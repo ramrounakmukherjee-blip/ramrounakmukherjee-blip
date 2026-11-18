@@ -28,6 +28,7 @@ SCENE_FILES = [
     "02-satellite.jpg",
     "03-farmland.jpg",
     "04-desk.jpg",
+    "05-agents.jpg",
 ]
 
 
