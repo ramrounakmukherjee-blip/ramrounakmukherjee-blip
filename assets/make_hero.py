@@ -27,7 +27,7 @@ SCENE_FILES = [
     "01-kolkata.jpg",
     "02-satellite.jpg",
     "03-farmland.jpg",
-    "04-desk-sunlit.jpg",
+    "04-desk-cat.jpg",
     "05-agents.jpg",
 ]
 
