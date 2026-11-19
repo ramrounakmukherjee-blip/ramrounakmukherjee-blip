@@ -1,0 +1,40 @@
+name: Streak
+
+on:
+  schedule:
+    # Runs after the cards workflow so pushes never collide
+    - cron: "0 19 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: streak
+
+jobs:
+  streak:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate streak stats card
+        uses: DenverCoder1/github-readme-streak-stats@95114806cd88ce35f5c195bf937c263b14511e8a
+        with:
+          options: "user=ramrounakmukherjee-blip&theme=dark&hide_border=false&timezone=Asia/Kolkata"
+          path: streak/streak-stats.svg
+
+      - name: Commit the streak card if it changed
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add streak
+          if git diff --cached --quiet; then
+            echo "The streak card is unchanged; nothing to commit."
+            exit 0
+          fi
+          git commit -m "chore: update streak stats"
+          git pull --rebase origin main
+          git push origin HEAD
