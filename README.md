@@ -237,7 +237,7 @@ A focused personal writing studio and narrative intelligence workspace built for
 <div align="center">
 
 <a href="https://github.com/ramrounakmukherjee-blip">
-  <img src="https://streak-stats.demolab.com/?user=ramrounakmukherjee-blip&theme=dark&hide_border=false&timezone=Asia/Kolkata" alt="Ram Rounak Mukherjee's Streak Stats" />
+  <img src="streak/streak-stats.svg" alt="Ram Rounak Mukherjee's Streak Stats" />
 </a>
 <br/><br/>
 <img src="https://quotes-github-readme.vercel.app/api?type=horizontal&theme=radical" alt="Random Dev Quote" />
