@@ -8,7 +8,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Languages by byte size</title>
-        <desc id="descId">Languages: TypeScript 30.39%, JavaScript 27.4%, Python 25.73%, HTML 8.99%, CSS 6.45%, Jupyter Notebook 1.04%</desc>
+        <desc id="descId">Languages: TypeScript 57.53%, JavaScript 17.31%, Python 14.83%, HTML 5.41%, CSS 4.32%, Jupyter Notebook 0.6%</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -90,52 +90,52 @@
           data-testid="lang-progress"
           x="0.0"
           y="0"
-          width="106.4"
+          width="201.4"
           height="8"
           fill="#3178c6"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="106.4"
+          x="201.4"
           y="0"
-          width="95.9"
+          width="60.6"
           height="8"
           fill="#f1e05a"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="202.3"
+          x="261.9"
           y="0"
-          width="90.1"
+          width="51.9"
           height="8"
           fill="#3572A5"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="292.3"
+          x="313.8"
           y="0"
-          width="31.5"
+          width="18.9"
           height="8"
           fill="#e34c26"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="323.8"
+          x="332.8"
           y="0"
-          width="22.6"
+          width="15.1"
           height="8"
           fill="#663399"
         />
       <rect
           mask="url(#rect-mask)"
           data-testid="lang-progress"
-          x="346.4"
+          x="347.9"
           y="0"
-          width="3.6"
+          width="2.1"
           height="8"
           fill="#DA5B0B"
         />
@@ -147,7 +147,7 @@
       <g class="stagger" style="animation-delay: 450ms">
         <circle cx="5" cy="6" r="5" fill="#3178c6" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          TypeScript 30.39%
+          TypeScript 57.53%
         </text>
       </g>
     </g>
@@ -155,7 +155,7 @@
       <g class="stagger" style="animation-delay: 600ms">
         <circle cx="5" cy="6" r="5" fill="#3572A5" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          Python 25.73%
+          Python 14.83%
         </text>
       </g>
     </g>
@@ -163,7 +163,7 @@
       <g class="stagger" style="animation-delay: 750ms">
         <circle cx="5" cy="6" r="5" fill="#663399" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          CSS 6.45%
+          CSS 4.32%
         </text>
       </g>
     </g>
@@ -174,7 +174,7 @@
       <g class="stagger" style="animation-delay: 450ms">
         <circle cx="5" cy="6" r="5" fill="#f1e05a" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          JavaScript 27.40%
+          JavaScript 17.31%
         </text>
       </g>
     </g>
@@ -182,7 +182,7 @@
       <g class="stagger" style="animation-delay: 600ms">
         <circle cx="5" cy="6" r="5" fill="#e34c26" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          HTML 8.99%
+          HTML 5.41%
         </text>
       </g>
     </g>
@@ -190,7 +190,7 @@
       <g class="stagger" style="animation-delay: 750ms">
         <circle cx="5" cy="6" r="5" fill="#DA5B0B" />
         <text data-testid="lang-name" x="15" y="10" class="lang-name">
-          Jupyter Notebook 1.04%
+          Jupyter Notebook 0.60%
         </text>
       </g>
     </g>
